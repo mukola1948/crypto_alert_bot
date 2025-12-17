@@ -1,11 +1,7 @@
-import secrets
-from pathlib import Path
-
-TG_TOKEN = secrets.TG_TOKEN
-CC_API_KEY = secrets.CC_API_KEY
-DB_FILENAME = str(Path("data") / "db.3.sqlite")
-PRICES_DB_FILENAME = str(Path("data") / "prices.sqlite")
-HANDLER_CACHE_DB_FILENAME  = str(Path("data") / "handler_cache.3.sqlite")
-HELP_FILENAME = 'readme.md'
-MAX_ALERT_LENGTH = 1000
-MAX_ALERTS_PER_USER = 20
+# config.py
+TELEGRAM_TOKEN = "8287163647:AAEwJqAkouc9x0Cttn01VDVMZ1DsqJqHQoM"  # токен вашого Telegram-бота
+CHAT_ID = "1788987385"  # ваш Telegram chat_id
+SYMBOLS = ["OPUSDT","LDOUSDT","ACEUSDT","BTCUSDT","ETHUSDT"]  # монети для моніторингу
+INTERVAL = "1m"  # таймфрейм 1 хвилина
+AVG_PERIODS = 20  # кількість попередніх інтервалів для середнього об'єму
+MULTIPLIER = 10  # поріг кратності для сповіщення
