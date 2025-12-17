@@ -43,5 +43,5 @@ def monitor():
                 BOT.send_message(text)
         time.sleep(60)
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     monitor()
